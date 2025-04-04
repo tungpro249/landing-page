@@ -1,7 +1,11 @@
+import { Jumbotron } from "@/component/jumbotron";
+import { Price } from "@/component/price";
+
 export default function Home() {
   return (
     <div>
-      hello fucking
+      <Jumbotron />
+      <Price />
     </div>
   );
 }
