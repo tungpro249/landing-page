@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Sửa chữa điện lạnh</title>
+        <title>Điện lạnh Anh Vũ</title>
         <meta name="description" content="Sửa chữa điện lạnh, Sửa chữa điện lạnh 24h, sua chua dien lanh, sua chua dien lanh 24h, sua chua dien lanh gia re, sua chua dien lanh gia re tai ha noi" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
