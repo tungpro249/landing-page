@@ -1,3 +1,5 @@
+import { FiPhone } from "react-icons/fi";
+
 export function Header() {
   return (
     <nav className="bg-[#2E7C39] border-gray-200 dark:bg-gray-900">
@@ -85,8 +87,9 @@ export function Header() {
             <li>
               <a
                 href="tel:0972227282"
-                className="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="shake-hover flex gap-2 py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
+                <FiPhone className="text-lg mt-1" />
                 0972227282
               </a>
             </li>

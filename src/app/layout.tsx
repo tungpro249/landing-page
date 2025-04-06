@@ -1,18 +1,18 @@
 "use client";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Roboto , Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/component/layout/Header";
 import { Footer } from "@/component/layout/Footer";
 import { NextSeo  } from "next-seo";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const geistSans = Roboto ({
+  variable: "--font-roboto",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const geistMono = Roboto_Mono({
+  variable: "--font-roboto-mono",
   subsets: ["latin"],
 });
 
