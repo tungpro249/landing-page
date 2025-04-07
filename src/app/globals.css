@@ -46,3 +46,7 @@ body {
 .shake-hover:hover {
   animation: shake 0.3s ease-in-out;
 }
+
+html {
+  scroll-behavior: smooth;
+}

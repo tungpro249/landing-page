@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import image1 from "@/assets/slider-test-image-1.webp";
-import image2 from "@/assets/slider-test-image-2.webp";
+import baner from "@/assets/baner.png";
+import baner2 from "@/assets/baner2.png";
 
-const images = [image1, image2, image1, image2, image1]; 
+const images = [baner, baner2];
 
 export function Jumbotron() {
   const [currentIndex, setCurrentIndex] = useState(0); // State để theo dõi slide hiện tại
@@ -21,7 +21,7 @@ export function Jumbotron() {
 
   return (
     <div className="relative w-[80%] py-10 mx-auto">
-      <div className="relative h-56 md:h-96 overflow-hidden rounded-2xl">
+      <div className="relative h-[620px] w-full overflow-hidden">
         {images.map((img, index) => (
           <div
             key={index}
@@ -32,23 +32,10 @@ export function Jumbotron() {
             <Image
               src={img}
               alt={`Slide ${index + 1}`}
-              layout="fill"
+              fill
               objectFit="cover"
             />
           </div>
-        ))}
-      </div>
-
-      {/* Navigation Dots */}
-      <div className="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            className={`w-3 h-3 rounded-full transition-all ${
-              index === currentIndex ? "bg-blue-500" : "bg-gray-300"
-            }`}
-            onClick={() => setCurrentIndex(index)}
-          ></button>
         ))}
       </div>
 

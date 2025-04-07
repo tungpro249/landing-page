@@ -1,7 +1,7 @@
 export function BookConsultation() {
   return (
-    <div className="bg-[#2E7C39]">
-      <section className="max-w-2xl mx-auto p-6 py-30 bg-[#2E7C39]">
+    <div className="bg-[#0866FF]">
+      <section className="max-w-2xl mx-auto p-6 py-30 bg-[#0866FF]">
         <h1 className="text-[32px] text-white font-bold mb-4 text-center text-gray-800">
           Đặt lịch tư vấn
         </h1>
@@ -41,13 +41,14 @@ export function BookConsultation() {
               rows={4}
             ></textarea>
           </div>
-
-          <button
-            type="submit"
-            className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
-          >
-            Đặt lịch
-          </button>
+          <div className="flex justify-center">
+            <button
+              type="button"
+              className="w-1/2 bg-[dodgerblue] text-white py-2 rounded-lg hover:bg-blue-700 transition"
+            >
+              Đặt lịch
+            </button>
+          </div>
         </form>
       </section>
     </div>

@@ -1,13 +1,34 @@
+"use client";
 import { FiPhone } from "react-icons/fi";
+import { useEffect, useState } from "react";
 
 export function Header() {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <nav className="bg-[#2E7C39] border-gray-200 dark:bg-gray-900">
+    <nav
+      className={`z-9999 w-full border-gray-200 dark:bg-gray-900 ${
+        isSticky
+          ? "fixed top-0 bg-[#0866FF] shadow-md transition-all duration-300"
+          : "bg-[#0866FF]"
+      }`}
+    >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a
-          href="https://flowbite.com/"
-          className="flex items-center space-x-3 rtl:space-x-reverse"
-        >
+        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
             src="https://flowbite.com/docs/images/logo.svg"
             className="h-8"
@@ -42,12 +63,11 @@ export function Header() {
           </svg>
         </button>
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-[#2E7C39] dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-[#0866FF] dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                aria-current="page"
+                className="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:p-0 dark:text-white md:dark:text-blue-500"
               >
                 Trang chủ
               </a>
@@ -62,7 +82,7 @@ export function Header() {
             </li>
             <li>
               <a
-                href="#"
+                href="#price"
                 className="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Báo giá
@@ -78,7 +98,7 @@ export function Header() {
             </li>
             <li>
               <a
-                href="#"
+                href="#footer"
                 className="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Liên hệ
