@@ -2,14 +2,14 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import suatulanh from "./../../public/sua-tu-lanh.jpg";
-import suatulanh2 from "./../../public/sua-dieu-hoa.jpg";
-import suatulanh3 from "./../../public/sua-tu-lanh-3.jpg";
+import suatulanh from "@/public/sua-tu-lanh.jpg";
+import suatulanh2 from "@/public/sua-dieu-hoa.jpg";
+import suatulanh3 from "@/public/sua-tu-lanh-3.jpg";
 
 export function RealImages() {
   const items = [suatulanh, suatulanh2, suatulanh3];
   const [current, setCurrent] = useState(0);
-  const timeoutRef = useRef(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const nextSlide = () => {
     setCurrent((prev) => (prev + 1) % items.length);
@@ -20,8 +20,12 @@ export function RealImages() {
   };
 
   useEffect(() => {
-    timeoutRef.current = setTimeout(nextSlide, 3000); // auto 3s
-    return () => clearTimeout(timeoutRef.current);
+    timeoutRef.current = setTimeout(nextSlide, 3000);
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
   }, [current]);
 
   return (

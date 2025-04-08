@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import baner from "./../../public/baner.png";
-import baner2 from "./../../public/baner2.png";
+import baner from "@/public/baner.png";
+import baner2 from "@/public/baner2.png";
 
 const images = [baner, baner2];
 
