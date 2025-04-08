@@ -8,8 +8,8 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 10.7769, // Vĩ độ (Ví dụ: Hồ Chí Minh)
-  lng: 106.7009, // Kinh độ
+  lat: 20.989720058873726, // Vi độ
+  lng: 105.91466188854758, // Kinh độ
 };
 
 const GoogleMapComponent = () => {

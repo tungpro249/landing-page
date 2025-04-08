@@ -14,6 +14,7 @@ export default function Home() {
       <Introduce />
       <Price />
       <BookConsultation />
+      {/* <CustomerReview /> */}
       <GoogleMapComponent />
       <RealImages />
       <div className="fixed bottom-40 left-10 z-50 w-20 h-20">

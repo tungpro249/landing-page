@@ -2,11 +2,12 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import baner from "@/assets/baner.png";
-import baner2 from "@/assets/baner2.png";
+import suatulanh from "./../../public/sua-tu-lanh.jpg";
+import suatulanh2 from "./../../public/sua-dieu-hoa.jpg";
+import suatulanh3 from "./../../public/sua-tu-lanh-3.jpg";
 
 export function RealImages() {
-  const items = [baner, baner2, baner, baner2, baner, baner2];
+  const items = [suatulanh, suatulanh2, suatulanh3];
   const [current, setCurrent] = useState(0);
   const timeoutRef = useRef(null);
 
@@ -24,17 +25,22 @@ export function RealImages() {
   }, [current]);
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto overflow-hidden">
-      <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${current * 100}%)` }}>
+    <div className="relative w-full max-w-4xl mx-auto overflow-hidden my-4" id="real-images">
+      <div
+        className="flex transition-transform duration-500"
+        style={{ transform: `translateX(-${current * 100}%)` }}
+      >
         {items.map((item, index) => (
-          <div key={index} className="min-w-full">
-            <Image src={item} alt={`Slide ${index}`} className="w-full h-auto object-cover" />
+          <div key={index} className="min-w-full h-[400px] relative">
+            <Image
+              src={item}
+              alt={`Slide ${index}`}
+              fill
+              className="object-cover rounded-lg"
+            />
           </div>
         ))}
       </div>
-
-      <button onClick={prevSlide} className="absolute top-1/2 left-2 -translate-y-1/2 bg-black/50 text-white p-2">Prev</button>
-      <button onClick={nextSlide} className="absolute top-1/2 right-2 -translate-y-1/2 bg-black/50 text-white p-2">Next</button>
     </div>
   );
 }

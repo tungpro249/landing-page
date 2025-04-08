@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import baner from "@/assets/baner.png";
-import baner2 from "@/assets/baner2.png";
+import baner from "./../../public/baner.png";
+import baner2 from "./../../public/baner2.png";
 
 const images = [baner, baner2];
 
@@ -20,26 +20,21 @@ export function Jumbotron() {
   };
 
   return (
-    <div className="relative w-[80%] py-10 mx-auto">
-      <div className="relative h-[620px] w-full overflow-hidden">
-        {images.map((img, index) => (
-          <div
-            key={index}
-            className={`absolute w-full h-full transition-opacity duration-700 ${
-              index === currentIndex ? "opacity-100" : "opacity-0"
-            }`}
-          >
+    <div className="relative w-full mx-auto overflow-hidden">
+      <div
+        className="flex transition-transform duration-500"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
+        {images.map((item, index) => (
+          <div key={index} className="min-w-full">
             <Image
-              src={img}
-              alt={`Slide ${index + 1}`}
-              fill
-              objectFit="cover"
+              src={item}
+              alt={`Slide ${index}`}
+              className="w-full h-auto object-cover"
             />
           </div>
         ))}
       </div>
-
-      {/* Previous Button */}
       <button
         type="button"
         className="absolute top-1/2 left-2 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-black/30 text-white"
@@ -47,8 +42,6 @@ export function Jumbotron() {
       >
         ❮
       </button>
-
-      {/* Next Button */}
       <button
         type="button"
         className="absolute top-1/2 right-2 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-black/30 text-white"

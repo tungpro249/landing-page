@@ -28,10 +28,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <title>Dịch vụ sửa điều hoà tại Hà Nội | Uy tín - Nhanh chóng</title>
+        <title>Dịch vụ sửa điện lạnh tại Hà Nội | Uy tín - 0972227282</title>
         <meta
           name="description"
-          content="Chuyên sửa chữa, bảo dưỡng điều hoà tại nhà Hà Nội. Thợ lành nghề, giá cả hợp lý."
+          content="Chuyên sửa chữa, bảo dưỡng điều hoà tại nhà Đông Dư Hà Nội. Sua dien lanh gia re, sua dien lanh tai dong du ha noi."
         />
 
         <script
@@ -39,7 +39,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "ClothingStore",
+              "@type": "Điện lạnh Anh Vũ",
               name: "Điện lạnh Anh Vũ",
               image: "https://domain.com/logo.jpg",
               address: {

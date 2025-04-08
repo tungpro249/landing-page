@@ -1,5 +1,5 @@
 import Image from "next/image";
-import thoSuaDieuHoa from "@/assets/tho-sua-dieu-hoa-1_1.jpg";
+import thoSuaDieuHoa from "./../../public/tho-sua-dieu-hoa-1_1.jpg";
 
 export function Introduce() {
   return (
