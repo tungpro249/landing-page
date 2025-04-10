@@ -1,10 +1,11 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import baner from "@/public/baner.png";
-import baner2 from "@/public/baner2.png";
 
-const images = [baner, baner2];
+const images = [
+  "https://res.cloudinary.com/df0psnigh/image/upload/v1744299727/banner_ulh6xi.jpg",
+  "https://res.cloudinary.com/df0psnigh/image/upload/v1744299727/baner2jpg_pgliez.jpg",
+];
 
 export function Jumbotron() {
   const [currentIndex, setCurrentIndex] = useState(0); // State để theo dõi slide hiện tại
@@ -27,10 +28,12 @@ export function Jumbotron() {
       >
         {images.map((item, index) => (
           <div key={index} className="min-w-full">
-            <Image
+            <img
               src={item}
               alt={`Slide ${index}`}
               className="w-full h-auto object-cover"
+              width={1000}
+              height={1000}
             />
           </div>
         ))}

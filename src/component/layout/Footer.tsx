@@ -18,7 +18,7 @@ export function Footer() {
               <li className="mb-4">
                 <article>
                   <p className="mb-2 text-lg">Số điện thoại:</p>
-                  <address className="text-red">0972227282</address>
+                  <address className="text-red">0972224282</address>
                 </article>
               </li>
               <li className="mb-4">

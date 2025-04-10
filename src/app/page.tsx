@@ -18,7 +18,7 @@ export default function Home() {
       <GoogleMapComponent />
       <RealImages />
       <div className="fixed bottom-40 left-10 z-50 w-20 h-20">
-        <a href="https://zalo.me/0378286868" target="_blank">
+        <a href="https://zalo.me/0972224282" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-full h-full"
@@ -32,7 +32,7 @@ export default function Home() {
             />
           </svg>
         </a>
-        <a href="tel:0981375025" target="_blank">
+        <a href="tel:0972224282" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-full h-full mt-2"

@@ -47,7 +47,7 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               name: "Điện lạnh Anh Vũ",
               image:
-                "https://res.cloudinary.com/df0psnigh/image/upload/v1744128026/baner2_regfir.png",
+                "https://res.cloudinary.com/df0psnigh/image/upload/v1744127872/baner_ygunn1.png",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "26 Hồng Hà - Đông Dư hạ - Gia Lâm",

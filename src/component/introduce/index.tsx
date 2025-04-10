@@ -1,6 +1,3 @@
-import Image from "next/image";
-import thoSuaDieuHoa from "./../../public/tho-sua-dieu-hoa-1_1.jpg";
-
 export function Introduce() {
   return (
     <section className="bg-[#0866FF] text-white">
@@ -15,12 +12,14 @@ export function Introduce() {
             như: tivi, tủ lạnh, máy giặt, điều hoà, máy lọc nước, bình nóng
             lạnh, kho lạnh tại nhà ở Hà Nội.
           </h3>
-          
+
           <p className="p-2 bg-white m-3 mb-5 w-[200px] mx-auto"></p>
 
           <div className="overflow-hidden rounded-lg">
-            <Image
-              src={thoSuaDieuHoa}
+            <img
+              src={
+                "https://res.cloudinary.com/df0psnigh/image/upload/v1744128025/tho-sua-dieu-hoa-1_1_gv0flu.jpg"
+              }
               alt="Thợ sửa điều hoà"
               className="w-full h-auto object-cover"
             />
