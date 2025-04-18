@@ -11,8 +11,8 @@ export function Footer() {
               <li className="mb-4">
                 <article>
                   <p className="mb-2 text-lg">Địa chỉ:</p>
-                  <address>* 26 Hồng Hà - Đông Dư hạ - Gia Lâm</address>
-                  <address>* S2-16 VINHOME OCEANPARK</address>
+                  <address className="mr-2">Cơ sở 1: 26 Hồng Hà - Đông Dư hạ - Gia Lâm</address>
+                  <address>Cơ sở 2: S2-16 VINHOME OCEANPARK</address>
                 </article>
               </li>
               <li className="mb-4">
@@ -67,8 +67,8 @@ export function Footer() {
         <div className="px-4 py-6 bg-[#0866FF] text-[#000] dark:bg-gray-700 md:flex md:items-center md:justify-center border-t border-gray-300">
           <span className="text-sm text-[#fff] dark:text-gray-300 sm:text-center">
             © 2025{" "}
-            <a href="https://flowbite.com/">
-              All Rights Reserved Điện lạnh Anh Vũ
+            <a href="https://www.facebook.com/oanthanhtung.713556/">
+              All Rights Reserved Đoàn Thanh Tùng
             </a>
           </span>
         </div>

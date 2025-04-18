@@ -18,7 +18,7 @@ const robotoMono = Roboto_Mono({
 export const metadata: Metadata = {
   title: "Điện lạnh Anh Vũ",
   description:
-    "Sửa chữa điện lạnh, Sửa chữa điện lạnh 24h, sua chua dien lanh, sua chua dien lanh 24h, sua chua dien lanh gia re, sua chua dien lanh gia re tai ha noi",
+    "Sửa chữa điện lạnh,dien lanh anh vu, điện lạnh anh vũ, sua chua tu lanh gan day, Sửa chữa điện lạnh 24h, sua chua dieu hoa, sửa điều hòa, dịch vụ sửa chữa ở khu vực gia lâm",
   openGraph: {
     title: "Dịch vụ sửa điều hoà tại Hà Nội | Uy tín - Nhanh chóng",
     description:

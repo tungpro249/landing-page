@@ -22,7 +22,7 @@ export const Price = () => {
       name: "Điều hoà treo tường",
       descriptions:
         "Giúp làm mát nhanh chóng, điện năng tiêu hao thấp và thoát nước tốt",
-      price: "200.000 ~ 300.000",
+      price: "200.000 ~ 500.000",
       image:
         "https://w.ladicdn.com/s550x550/5eba1da36b12637b2bd3f2e5/226639_0_aftwts-20230707060154-wnqdk.png",
     },
@@ -43,10 +43,10 @@ export const Price = () => {
         "https://w.ladicdn.com/s550x550/5eba1da36b12637b2bd3f2e5/226639_0_aftwts-20230707060154-wnqdk.png",
     },
     {
-      name: "Điều hoà treo tường",
+      name: "Điều hoà âm trần",
       descriptions:
         "Giúp làm mát nhanh chóng, điện năng tiêu hao thấp và thoát nước tốt",
-      price: "200.000 ~ 300.000",
+      price: "200.000 ~ 700.000",
       image:
         "https://w.ladicdn.com/s550x550/5eba1da36b12637b2bd3f2e5/226639_0_aftwts-20230707060154-wnqdk.png",
     },

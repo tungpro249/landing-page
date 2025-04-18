@@ -7,10 +7,9 @@ export function Reason() {
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
           Sửa Chữa Điện Lạnh Anh Vũ là đơn vị chuyên cung cấp dịch vụ sửa chữa,
-          lắp đặt và bảo trì các thiết bị điện lạnh uy tín tại khu vực [Tên khu
-          vực hoạt động]. Với nhiều năm kinh nghiệm trong nghề, chúng tôi tự hào
-          là địa chỉ tin cậy của nhiều khách hàng cá nhân, hộ gia đình và doanh
-          nghiệp.
+          lắp đặt và bảo trì các thiết bị điện lạnh uy tín tại khu vực Hà Nội.
+          Với nhiều năm kinh nghiệm trong nghề, chúng tôi tự hào là địa chỉ tin
+          cậy của nhiều khách hàng cá nhân, hộ gia đình và doanh nghiệp.
         </p>
       </div>
 
