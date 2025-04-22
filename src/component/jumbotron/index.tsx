@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
 
 const images = [
   "https://res.cloudinary.com/df0psnigh/image/upload/v1744299727/banner_ulh6xi.jpg",
