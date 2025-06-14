@@ -54,3 +54,15 @@ html {
 a:hover {
   color: white;
 }
+
+@keyframes shake {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(2px, 2px) rotate(1deg); }
+  50% { transform: translate(0, 0) rotate(0deg); }
+  75% { transform: translate(-2px, 2px) rotate(-1deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.shake-animation {
+  animation: shake 1s infinite;
+}

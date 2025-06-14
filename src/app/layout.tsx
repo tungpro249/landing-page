@@ -16,11 +16,11 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Điện lạnh Anh Vũ",
+  title: "Điện lạnh Anh Vũ | Dịch vụ sửa chữa điều hoà tại Đông dư",
   description:
-    "Sửa chữa điện lạnh,dien lanh anh vu, điện lạnh anh vũ, sua chua tu lanh gan day, Sửa chữa điện lạnh 24h, sua chua dieu hoa, sửa điều hòa, dịch vụ sửa chữa ở khu vực gia lâm",
+    "Chuyên sửa chữa, bảo dưỡng điều hoà tại nhà Đông Dư - Hà Nội. Đội ngũ kỹ thuật có tay nghề cao, giá cả hợp lý.",
   openGraph: {
-    title: "Dịch vụ sửa điều hoà tại Hà Nội | Uy tín - Nhanh chóng",
+    title: "Dịch vụ sửa điều hoà tại Đông dư - Hà Nội | Uy tín - Nhanh chóng",
     description:
       "Chuyên sửa chữa, bảo dưỡng điều hoà tại nhà Hà Nội. Thợ lành nghề, giá cả hợp lý.",
     images: ["https://codegiare.com/public/banner.jpg"],
